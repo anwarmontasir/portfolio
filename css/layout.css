@@ -1,0 +1,37 @@
+#wrap {
+    max-width: 960px;
+    padding: 2em;
+    margin: 0 auto;
+}
+header {
+    display: table;
+    width: 100%;
+    border-bottom: 1px solid #aaa;
+    padding-bottom: 1em;
+}
+#logo {
+    display: table-cell;
+    width: 100px;
+}
+nav {
+    display: table-cell;
+    vertical-align: bottom;
+    text-align: right;
+}
+nav h1 {
+    font-size: 1.2em;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+}
+nav ul li {display: inline-block;}
+nav ul li::after {content: ' / ';}
+nav ul li:last-child::after {content: '';}
+nav ul li a {
+    text-decoration: none;
+    color: #444;
+    text-transform: uppercase;
+}
