@@ -3,7 +3,7 @@
     padding: 2em;
     margin: 0 auto;
 }
-header {
+header#nav-header {
     display: table;
     width: 100%;
     border-bottom: 1px solid #aaa;
@@ -34,4 +34,21 @@ nav ul li a {
     text-decoration: none;
     color: #444;
     text-transform: uppercase;
+}
+article h2 {
+    margin-bottom: 0;
+    font: 400 2em/1 'Fanwood Text', serif;
+}
+article img {
+    border: 8px solid #fff;
+    border-bottom-width: 16px;
+    box-shadow: 0 0 3px 2px rgba(0,0,0,.08);
+}
+.byline {
+    font-style: italic;
+    margin-bottom: 1em;
+}
+
+.template {
+  display: none;
 }

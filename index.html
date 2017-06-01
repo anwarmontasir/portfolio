@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <title>Anwar Montasir | Web Developer</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="http://fonts.googleapis.com/css?family=Roboto:300,300italic,700" rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=Roboto:300,300italic,700|Fanwood+Text:400,400italic" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/layout.css">
@@ -12,7 +12,7 @@
 <body>
 
   <div id="wrap">
-    <header>
+    <header id="nav-header">
       <div id="logo"><img src="img/anwar-montasir-logo.png" alt="Anwar Montasir logo"></div>
       <nav>
         <h1>Anwar Montasir</h1>
@@ -23,9 +23,26 @@
         </ul>
       </nav>
     </header>
+    <main>
+      <section id="projects">
+        <article class="template" data-category="cat">
+          <header>
+            <h2>Title</h2>
+            <div class="byline">
+              published <time pubdate datetime="2000-01-01">Publish Time</time>
+            </div>
+          </header>
+          <img src="" alt="">
+          <section class="article-body"></section>
+        </article>
+      </section>
+    </main>
   </div> <!-- #wrap -->  
 
-<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/retina.js/2.1.1/retina.min.js"></script>
+<script src="js/portfolioProjects.js" type="text/javascript"></script>
+<script src="js/projects.js" type="text/javascript"></script>
 
 </body>
 </html>
