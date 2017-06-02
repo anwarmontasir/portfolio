@@ -4,42 +4,49 @@
   <meta charset="UTF-8">
   <title>Anwar Montasir | Web Developer</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="http://fonts.googleapis.com/css?family=Roboto:300,300italic,400" rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=Roboto:300,300italic,400|Roboto+Slab:400,300" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/layout.css">
 </head>
 <body>
 
-  <div id="wrap">
-    <header id="nav-header">
-      <div id="logo"><img src="img/anwar-montasir-logo.png" alt="Anwar Montasir logo"></div>
-      <nav>
-        <h1>Anwar Montasir</h1>
-        <ul>
-          <li><a href="#">Bio</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Resume</a></li>
-        </ul>
-      </nav>
-    </header>
+  <header id="nav-header">
+    <div class="wrap">
+      <div class="header-wrap">
+        <div id="logo"><img src="img/anwar-montasir-logo.png" alt="Anwar Montasir logo"></div>
+        <nav>
+          <h1>Anwar Montasir</h1>
+          <p id="tagline">Web Developer</p>
+          <ul>
+            <li><a href="#">Bio</a></li>
+            <li><a href="#" id="current">Projects</a></li>
+            <li><a href="#">Resume</a></li>
+          </ul>
+        </nav>
+      </div> <!-- .header-wrap -->
+    </div> <!-- .wrap -->
+  </header>
+  <div class="wrap">
     <main>
-      <section id="projects">
-        <article class="template" data-category="cat">
-          <header>
-            <h2>Title</h2>
-            <div class="byline">
-              published <time pubdate datetime="2000-01-01">Publish Time</time>
-            </div>
-          </header>
-          <div class="img-wrap"><img src="" alt=""></div>
-          <section class="article-body"></section>
-        </article>
-      </section>
+      <div id="h2wrap"><h2>Projects.</h2></div>
+        <section id="projects">
+          <article class="template" data-category="cat">
+            <header>
+              <h3>Title</h3>
+              <div class="byline">
+                published <time pubdate datetime="2000-01-01">Publish Time</time>
+              </div>
+            </header>
+            <div class="img-wrap"><img src="" alt=""></div>
+            <section class="article-body"></section>
+            <a href="" target="_blank" class="project-link">Visit project &raquo;</a>
+          </article>
+        </section>
     </main>
 
     <footer><small>&copy; <script>document.write(new Date().getFullYear())</script> Anwar Montasir.</small></footer>
-  </div> <!-- #wrap -->  
+  </div> <!-- .wrap -->  
 
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/retina.js/2.1.1/retina.min.js"></script>

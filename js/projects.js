@@ -21,12 +21,13 @@ Project.prototype.toHtml = function() {
 
   /* $newArticle.find('address a').html(this.author);
   $newArticle.find('address a').attr('href', this.authorUrl); */
-  $newProject.find('h2').html(this.title);
+  $newProject.find('h3').html(this.title);
   $newProject.find('img').attr({
     'src': this.projectImg,
     'alt': this.imgCaption
   });
   $newProject.find('.article-body').html(this.body);
+  $newProject.find('.project-link').attr('href', this.projectUrl);
   $newProject.find('time').attr('datetime', this.publishedOn); 
 
   // Display the date as a relative number of 'days ago'
