@@ -31,7 +31,7 @@ Project.prototype.toHtml = function() {
 
   // Display the date as a relative number of 'days ago'
   var daysAgo = parseInt((new Date() - new Date(this.publishedOn))/60/60/24/1000);
-  $newProject.find('time').html('about ' + daysAgo + ' days ago');
+  $newProject.find('time').html('about ' + daysAgo + ' days ago.');
   return $newProject;
 };
 
@@ -43,7 +43,6 @@ portfolioProjects.sort(function(a,b) {
 portfolioProjects.forEach(function(projectObject) {
   // REVIEW: Take a look at this forEach method; This may be the first time we've seen it.
   projects.push(new Project(projectObject));
-  console.log(projects);
 });
 
 projects.forEach(function(project) {

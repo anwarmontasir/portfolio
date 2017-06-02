@@ -35,20 +35,37 @@ nav ul li a {
     color: #444;
     text-transform: uppercase;
 }
-article h2 {
-    margin-bottom: 0;
-    font: 400 2em/1 'Fanwood Text', serif;
+article {
+    margin: 5em 0;
+    padding-bottom: 3em;
+    border-bottom: 1px solid #999;
 }
-article img {
-    border: 8px solid #fff;
-    border-bottom-width: 16px;
-    box-shadow: 0 0 3px 2px rgba(0,0,0,.08);
+article h2 {
+    line-height: 1.1;
+    margin-bottom: 5px;
+    font-size: 1.8em;
+    color: #555;
+    text-transform: uppercase;
 }
 .byline {
-    font-style: italic;
-    margin-bottom: 1em;
+    margin-bottom: 2em;
+}
+.img-wrap {
+    padding: 8px 8px 16px 8px;
+    box-shadow: 0 0 3px 2px rgba(0,0,0,.08);
+    margin-bottom: 2em;
+    background: #fff;
+}
+article p {
+    font-size: 1.2em;
+    margin: 1em 0;
 }
 
 .template {
   display: none;
+}
+
+footer {
+    text-align: center;
+    margin-bottom: 2em;
 }
