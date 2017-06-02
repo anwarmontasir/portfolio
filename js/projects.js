@@ -47,5 +47,5 @@ portfolioProjects.forEach(function(projectObject) {
 });
 
 projects.forEach(function(project) {
-  $('#projects').append(project.toHtml());
+  $('#project-content').append(project.toHtml());
 });
