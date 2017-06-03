@@ -6,9 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="http://fonts.googleapis.com/css?family=Roboto:300,300italic,400|Roboto+Slab:400,300" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/base.css">
-  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" href="img/favicon.png">
 </head>
 <body>
 
@@ -20,32 +19,62 @@
           <h1>Anwar Montasir</h1>
           <p id="tagline">Web Developer</p>
           <ul>
-            <li><a href="#">Bio</a></li>
-            <li><a href="#" id="current">Projects</a></li>
-            <li><a href="#">Resume</a></li>
+            <li><a href="#bio" id="current">Bio</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#resume">Resume</a></li>
           </ul>
         </nav>
       </div> <!-- .header-wrap -->
     </div> <!-- .wrap -->
   </header>
-  <div class="wrap">
-    <main>
-      <div id="h2wrap"><h2>Projects.</h2></div>
-        <section id="projects">
-          <article class="template" data-category="cat">
-            <header>
-              <h3>Title</h3>
-              <div class="byline">
-                published <time pubdate datetime="2000-01-01">Publish Time</time>
-              </div>
-            </header>
-            <div class="img-wrap"><img src="" alt=""></div>
-            <section class="article-body"></section>
-            <a href="" target="_blank" class="project-link">Visit project &raquo;</a>
-          </article>
-        </section>
-    </main>
-  </div> <!-- .wrap -->  
+  <section id="bio" class="page-section">
+    <div class="wrap">
+      <main>
+        <article>
+          <h2>Bio header.</h2>
+          <p>Cat ipsum dolor sit amet, omnis explicabo. Quis nisi. Natus modi non and aliquip or ratione but id. Incididunt. Non error. Pariatur ad id quis vitae, and adipisci or doloremque. Exercitationem. Aute excepteur incidunt, for eu quia. Quae eos so ullamco voluptate.</p>
+          <p>Nostrum dolore and iure consequatur pariatur deserunt. Si inventore but error. Labore nihil, so incididunt so sit. Consequat mollit minim et vel. Quis excepteur and eaque eu for eum or vitae. Esse pariatur mollit cillum aperiam. Mollit voluptatem. Veritatis explicabo, in for in or irure quia, and sequi. Aut lorem so magnam quaerat. Consequat anim. Irure minim laboris and consequat ab.</p>
+          <p>Sit unde so nostrum so sed yet aute. Amet. Laborum eaque. Eius. Nostrud consequat but velit but nostrud. Ipsum laudantium, do. Minim dicta. Pariatur. Enim. Veritatis nesciunt vitae but numquam incidunt, but suscipit. Vitae. Voluptas ratione for fugit velit for aliqua. Iste ex but dolor for aliquip explicabo. Do aliquam pariatur or vel.</p>
+          <p>Consequat laboriosam or omnis for totam veniam. Quasi adipisci or sint but voluptas so beatae and quae. In eu. Commodo natus, or suscipit. Nisi reprehenderit yet modi for ullam. Nostrum. Magni quia consequatur and exercitation laborum or ad.</p>
+        </article>
+      </main>
+    </div>
+  </section>
+  <section id="projects" class="page-section">
+    <div class="wrap">
+      <main>
+          <div id="project-content">
+            <article class="template" data-category="cat">
+              <header>
+                <h2>Title</h2>
+                <div class="byline">
+                  published <time pubdate datetime="2000-01-01">Publish Time</time>
+                </div>
+              </header>
+              <div class="img-wrap"><img src="" alt=""></div>
+              <section class="article-body"></section>
+              <a href="#" class="read-more">(Read more)</a>
+              <a href="#" class="show-less hidden">(Show less)</a>
+              <a href="" target="_blank" class="project-link">Visit project &raquo;</a>
+            </article>
+          </div> <!-- #project-content -->
+      </main>
+    </div> <!-- .wrap -->
+  </section>
+  <section id="resume" class="page-section">
+    <div class="wrap">
+      <main>
+        <article>
+          <h2>Resume header.</h2>
+          <p>Cat ipsum dolor sit amet. Quisquam adipisci. Ea. Incidunt fugit. Voluptatem reprehenderit qui yet inventore so eaque and officia. Nostrum do nemo, consequatur for dicta.</p>
+          <p>Iste sint but eum for amet in or error. Reprehenderit modi or voluptatem rem voluptas dolores yet officia. Eum. Est. Non ullam exercitationem. Vitae. Ea beatae but sequi ad but unde or numquam. Nulla quaerat. Tempora quae aliquam modi commodi explicabo.</p>
+          <p>Accusantium sunt yet ea so dolor but velit aliquam. Proident. Labore irure natus but numquam or corporis lorem for minim. Fugiat. Quia ea consequuntur aliquam and cupidatat but mollit or incididunt. Officia irure or eu irure perspiciatis. Consequuntur modi totam but architecto so eaque for sit aspernatur. Eum architecto eiusmod. Eaque ipsum but magnam but iste.</p>
+          <p>Aspernatur incidunt vel or ullamco but eum. Suscipit lorem so commodi ipsum dolore incidunt quia. Ipsum dolor vel and labore for dolores for amet for quam. Consectetur voluptatem laboriosam laudantium. Laboriosam ab or excepteur so fugit. Enim sunt illo aliqua.</p>
+          <p>Cillum veniam, but aliquid modi. Eos nequeporro.</p>
+        </article>
+      </main>
+    </div>
+  </section>  
 
   <footer>
     <div class="wrap">
@@ -64,7 +93,7 @@
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/retina.js/2.1.1/retina.min.js"></script>
 <script src="js/portfolioProjects.js" type="text/javascript"></script>
-<script src="js/projects.js" type="text/javascript"></script>
+<script src="js/main.js" type="text/javascript"></script>
 
 </body>
 </html>

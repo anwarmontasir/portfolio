@@ -1,17 +1,40 @@
+/* ===== RESET (meyerweb) ===== */
+
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}nav ol,nav ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}strong{font-weight:700}em{font-style:italic}
+
+/* ===== BASE ===== */
+
+body {
+	font: 300 100%/1.5 'Roboto', sans-serif;
+	color: #44474a;
+    background: #e4e7ea;
+}
+a, a:visited {color: #4988b5; text-decoration: none;}
+a:hover {color: #5998c5;}
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ===== LAYOUT ===== */
+
+#projects, #resume {display: none;}
+
 .wrap {
     max-width: 960px;
     padding: 1.5em;
     margin: 0 auto;
 }
-.header-wrap {
-    display: table;
-    width: 100%;
-}
-header#nav-header {
+#nav-header {
     background: #44474a;
     color: #fff;
     border-bottom: 6px solid #fff;
     box-shadow: 0 1px 2px #a4a7aa;
+}
+.header-wrap {
+    display: table;
+    width: 100%;
 }
 #logo {
     display: table-cell;
@@ -36,27 +59,18 @@ nav ul {
     margin: 0;
     padding: 0;
 }
-nav ul li {display: inline-block;}
+nav ul li {display: inline-block; color: #d4d7da;}
 nav ul li::after {content: ' / ';}
 nav ul li:last-child::after {content: '';}
-nav ul li a {
-    text-decoration: none;
+nav ul li a, nav ul li a:visited {
     color: #d4d7da;
     text-transform: uppercase;
     font-size: 1.1em;
 }
+nav ul li a:hover {color: #fff;}
 #current {color: #ff835a;}
-#h2wrap {text-align: center;}
-h2 {
-    font: 300 1.8em/1.5 'Roboto Slab', serif;
-    background: #df633a;
-    color: #fff;
-    display: inline-block;
-    padding: 5px 10px 5px 13px;
-    margin-bottom: 0;
-    text-align: center;
-    box-shadow: 0 1px 2px #a4a7aa;
-}
+
+main {margin: 1.5em 0;}
 article {
     margin: 3em 0;
     padding-bottom: 3em;
@@ -66,7 +80,7 @@ article:last-child {
     border-bottom: none;
     margin-bottom: 0;
 }
-article h3 {
+article h2 {
     margin-bottom: 0;
     font: 300 1.7em/1.1 'Roboto Slab', serif;
     color: #54575a;
@@ -77,7 +91,7 @@ article h3 {
     font-size: .9em;
 }
 .img-wrap {
-    padding: 8px 8px 16px 8px;
+    padding: .5em .5em 1em .5em;
     box-shadow: 0 1px 2px #a4a7aa;
     margin-bottom: 2em;
     background: #fff;
@@ -86,17 +100,21 @@ article p {
     font-size: 1.1em;
     margin: 1em 0;
 }
+.read-more, .show-less {margin: -.5em 0 1.5em;}
+.read-more {display: block;}
+.show-less {display: none;}
 a.project-link {
     background: #4988b5;
     color: #fff;
     text-decoration: none;
     font-size: 1.2em;
-    padding: 8px 16px;
-    border-radius: 8px;
+    padding: .5em 1em;
+    border-radius: .5em;
     margin-top: 1em;
     display: inline-block;
     box-shadow: 0 2px 3px #84878a;
 }
+a.project-link:hover {background: #5998c5;}
 
 .template {
   display: none;
@@ -119,7 +137,8 @@ footer ul li {
     margin-right: 10px;
 }
 footer ul li:last-child {margin-right: 0;}
-footer ul li a {color: #fff;}
+footer ul li a, footer ul li a:visited {color: #e4e7ea;}
+footer ul li a:hover {color: #fff;}
 .clip {
     clip: rect(1px,1px,1px,1px);
     position: absolute!important;
@@ -128,6 +147,4 @@ footer ul li a {color: #fff;}
     overflow: hidden;
 }
 
-@media screen and (max-width: 480px) {
-    #logo {width: 90px;}
-}
+/* ===== MOBILE ===== */
