@@ -21,7 +21,7 @@ Project.prototype.toHtml = function() {
 
   /* $newArticle.find('address a').html(this.author);
   $newArticle.find('address a').attr('href', this.authorUrl); */
-  $newProject.find('h3').html(this.title);
+  $newProject.find('h2').html(this.title);
   $newProject.find('img').attr({
     'src': this.projectImg,
     'alt': this.imgCaption
@@ -59,8 +59,8 @@ pageView.handleMainNav = function () {
     $(this).attr('id', 'current');
     var $whereToGo = $(this.hash);
     console.log($whereToGo);
-    $('.page-section').hide();
-    $($whereToGo).fadeIn(500);
+    $('.page-section').fadeOut('fast');
+    $($whereToGo).fadeIn('slow');
   }); // Let's now trigger a click on the first .tab element, to set up the page.
 };
 

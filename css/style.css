@@ -71,23 +71,6 @@ nav ul li a:hover {color: #fff;}
 #current {color: #ff835a;}
 
 main {margin: 1.5em 0;}
-.h2wrap {text-align: center;}
-h2 {
-    font: 300 1.8em/1.5 'Roboto Slab', serif;
-    background: #df633a;
-    color: #fff;
-    display: inline-block;
-    padding: 5px 10px 7px;
-    border-radius: .25em;
-    margin-bottom: 0;
-    text-align: center;
-    box-shadow: 1px 1px 3px #a4a7aa;
-    transform: rotate(1deg);
-    border-top: 1px solid #fff;
-    border-right: 1px solid #54575a;
-    border-bottom: 1px solid #54575a;
-    border-left: 1px solid #fff;
-}
 article {
     margin: 3em 0;
     padding-bottom: 3em;
@@ -97,7 +80,7 @@ article:last-child {
     border-bottom: none;
     margin-bottom: 0;
 }
-article h3 {
+article h2 {
     margin-bottom: 0;
     font: 300 1.7em/1.1 'Roboto Slab', serif;
     color: #54575a;
@@ -163,3 +146,5 @@ footer ul li a:hover {color: #fff;}
     width: 1px;
     overflow: hidden;
 }
+
+/* ===== MOBILE ===== */
