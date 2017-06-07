@@ -8,6 +8,21 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" type="image/png" href="img/favicon.png">
+  <script id="project-template" type="text/x-handlebars-template">
+    <article data-category={{category}}>
+      <header>
+        <h2>{{title}}</h2>
+        <div class="byline">
+          <time pubdate datetime={{publishedOn}}>{{publishStatus}}</time>
+        </div>
+      </header>
+      <div class="img-wrap"><img src="{{projectImg}}" alt="{{imgCaption}}"></div>
+      <section class="article-body">{{{body}}}</section>
+      <a href="#" class="read-more">(Read more)</a>
+      <a href="#" class="show-less">(Show less)</a>
+      <a href="{{projectUrl}}" target="_blank" class="project-link">Visit project &raquo;</a>
+    </article>
+  </script>
 </head>
 <body>
 
@@ -44,19 +59,6 @@
     <div class="wrap">
       <main>
           <div id="project-content">
-            <article class="template" data-category="cat">
-              <header>
-                <h2>Title</h2>
-                <div class="byline">
-                  published <time pubdate datetime="2000-01-01">Publish Time</time>
-                </div>
-              </header>
-              <div class="img-wrap"><img src="" alt=""></div>
-              <section class="article-body"></section>
-              <a href="#" class="read-more">(Read more)</a>
-              <a href="#" class="show-less">(Show less)</a>
-              <a href="" target="_blank" class="project-link">Visit project &raquo;</a>
-            </article>
           </div> <!-- #project-content -->
       </main>
     </div> <!-- .wrap -->
@@ -92,6 +94,7 @@
 
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/retina.js/2.1.1/retina.min.js"></script>
+<script src ="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.min.js"></script>
 <script src="js/portfolioProjects.js" type="text/javascript"></script>
 <script src="js/projects.js" type="text/javascript"></script>
 <script src="js/pageView.js" type="text/javascript"></script>
