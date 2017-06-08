@@ -6,7 +6,6 @@ pageView.handleMainNav = function () {
     $('nav ul li a').removeAttr('id', 'current');
     $(this).attr('id', 'current');
     var $whereToGo = $(this.hash);
-    console.log($whereToGo);
     $('.page-section').fadeOut('fast');
     $($whereToGo).fadeIn('slow');
   }); // Let's now trigger a click on the first .tab element, to set up the page.
@@ -32,7 +31,10 @@ pageView.setTeasers = function () {
 
 };
 
-$(document).ready(function () {
+pageView.initIndexPage = function() {
+  Project.all.forEach(function(project) { // eslint-disable-line
+    $('#project-content').append(project.toHtml());
+  });
   pageView.handleMainNav();
   pageView.setTeasers();
-});
+};
