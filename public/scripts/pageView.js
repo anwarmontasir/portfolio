@@ -1,7 +1,7 @@
 var pageView = {};
 
 pageView.handleMainNav = function () {
-  $('nav ul li a').on('click',function() {
+  $('nav ul li a').on('click', function () {
     event.preventDefault();
     $('nav ul li a').removeAttr('id', 'current');
     $(this).attr('id', 'current');
@@ -32,7 +32,10 @@ pageView.setTeasers = function () {
 
 };
 
-$(document).ready(function () {
+pageView.initIndexPage = function () {
+  Project.all.forEach(function (project) { // eslint-disable-line
+    $('#project-content').append(project.toHtml());
+  });
   pageView.handleMainNav();
   pageView.setTeasers();
-});
+};
