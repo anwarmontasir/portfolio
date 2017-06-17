@@ -1,6 +1,6 @@
 'use strict';
 
-var app || {};
+var app = app || {};
 
 (function (module) {
   function Project(portfolioProjectsObj) {
@@ -15,10 +15,10 @@ var app || {};
     this.publishStatus = this.publishedOn ? `published ${this.daysAgo} days ago` : '(draft)';
     return template(this);
   };
-  
+
   Project.loadAll = portfolioProjects => {
     portfolioProjects.sort((a,b) => (new Date(b.publishedOn)) - (new Date(a.publishedOn)));
-    Portfolio.all = portfolioProjects.map(ele => new Project(ele));
+    Project.all = portfolioProjects.map(ele => new Project(ele));
   };
 
   Project.fetchAll = callback => {
@@ -27,7 +27,7 @@ var app || {};
         Project.loadAll(results);
         callback();
       }
-    )  
+    )
   };
 
   module.Project = Project;

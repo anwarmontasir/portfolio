@@ -12,7 +12,16 @@
   "dependencies": {
     "body-parser": "^1.17.2",
     "express": "^4.15.3",
-    "pg": "^6.1.2",
-    "nodemon": "^1.11.0"
-  }
+    "nodemon": "^1.11.0",
+    "pg": "^6.1.2"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anwarmontasir/portfolio.git"
+  },
+  "bugs": {
+    "url": "https://github.com/anwarmontasir/portfolio/issues"
+  },
+  "homepage": "https://github.com/anwarmontasir/portfolio#readme"
 }

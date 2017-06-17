@@ -11,10 +11,9 @@ var app = app || {};
       $('nav ul li a').removeAttr('id', 'current');
       $(this).attr('id', 'current');
       var $whereToGo = $(this.hash);
-      console.log($whereToGo);
       $('.page-section').fadeOut('fast');
       $($whereToGo).fadeIn('slow');
-    }); // Let's now trigger a click on the first .tab element, to set up the page.
+    });
   };
 
   pageView.setTeasers = function () {
@@ -38,9 +37,7 @@ var app = app || {};
   };
 
   pageView.initIndexPage = function () {
-    Project.all.forEach(function (project) { // eslint-disable-line
-      $('#project-content').append(project.toHtml());
-    });
+    app.Project.all.forEach(a => $('#project-content').append(a.toHtml()));
     pageView.handleMainNav();
     pageView.setTeasers();
   };
