@@ -34,9 +34,9 @@
           <h1>Anwar Montasir</h1>
           <p id="tagline">Web Developer</p>
           <ul>
-            <li><a href="#bio" id="current">Bio</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#resume">Resume</a></li>
+            <li><a href="/" id="current">Bio</a></li>
+            <li><a href="/projects">Projects</a></li>
+            <li><a href="/resume">Resume</a></li>
           </ul>
         </nav>
       </div> <!-- .header-wrap -->
@@ -95,10 +95,12 @@
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/retina.js/2.1.1/retina.min.js"></script>
 <script src ="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.min.js"></script>
-<script src="scripts/projects.js" type="text/javascript"></script>
-<script src="scripts/pageView.js" type="text/javascript"></script>
-<script>
-  app.Project.fetchAll(app.pageView.initIndexPage);
-</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/page.js/1.7.1/page.min.js">
+<script src="scripts/models/projects.js"></script>
+<script src="scripts/views/pageView.js"></script>
+<script src="scripts/controllers/bioController.js"></script>
+<script src="scripts/controllers/projectsController.js"></script>
+<script src="scripts/controllers/resumeController.js"></script>
+<script src="scripts/controllers/routes.js"></script>
 </body>
 </html>
