@@ -3,20 +3,9 @@
 var app = app || {};
 
 (function (module) {
-  const pageView = {};
+  const projectsView = {};
 
-  pageView.handleMainNav = function () {
-    $('nav ul li a').on('click', function () {
-      event.preventDefault();
-      $('nav ul li a').removeAttr('id', 'current');
-      $(this).attr('id', 'current');
-      var $whereToGo = $(this.hash);
-      $('.page-section').fadeOut('fast');
-      $($whereToGo).fadeIn('slow');
-    });
-  };
-
-  pageView.setTeasers = function () {
+  projectsView.setTeasers = function () {
     $('.article-body *:nth-of-type(n+2)').hide();
 
     $('.read-more').on('click', function () {
@@ -36,11 +25,12 @@ var app = app || {};
 
   };
 
-  pageView.initIndexPage = function () {
+  projectsView.initIndexPage = function () {
     app.Project.all.forEach(a => $('#project-content').append(a.toHtml()));
-    pageView.handleMainNav();
-    pageView.setTeasers();
+    projectsView.setTeasers();
+    $( '.page-section' ).fadeOut('fast');
+    $( '#projects' ).fadeIn('slow');
   };
 
-  module.pageView = pageView;
+  module.projectsView = projectsView;
 }(app));
