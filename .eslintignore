@@ -1,2 +1,2 @@
 **/*/vendor/
-githubToken.js
+.env
