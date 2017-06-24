@@ -3,8 +3,7 @@ var app = app || {};
 
 (function(module) {
   const bioView = {};
-  console.log('are goon = '+app.repos);
-
+  
   let repoRender = Handlebars.compile($('#repo-template').text());
   let userRender = Handlebars.compile($('#user-template').text());
 
